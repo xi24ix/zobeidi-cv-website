@@ -1,0 +1,49 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Interactive 3D space experiment with Three.js and GSAP by Hossein J Zobeidi."><link rel="canonical" href="space-chase/index.html"><meta property="og:title" content="Space Chase"><meta property="og:description" content="Interactive 3D space experiment with Three.js and GSAP by Hossein J Zobeidi."><meta property="og:image" content="https://github.com/xi24ix/og-image-default.webp"><meta property="og:url" content="space-chase/index.html"><meta property="og:type" content="website"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Space Chase"><meta name="twitter:description" content="Interactive 3D space experiment with Three.js and GSAP by Hossein J Zobeidi."><meta name="twitter:image" content="https://github.com/xi24ix/og-image-default.webp"><script>(function(){const shouldTrackAnalytics = true;
+
+      if (shouldTrackAnalytics) {
+        var measurementId = 'G-xxxxxxxx';
+        var gaScript = document.createElement('script');
+        gaScript.async = true;
+        gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=' + measurementId;
+        document.head.appendChild(gaScript);
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+
+        if (!window.__gaInitialized) {
+          gtag('js', new Date());
+          gtag('config', measurementId, { send_page_view: false });
+          window.__gaInitialized = true;
+        }
+
+        var lastPageViewUrl = '';
+        function trackPageView() {
+          var url = window.location.href;
+          if (url === lastPageViewUrl) return;
+          lastPageViewUrl = url;
+          gtag('event', 'page_view', {
+            page_title: document.title,
+            page_location: url,
+            page_path: window.location.pathname + window.location.search,
+          });
+        }
+
+        document.addEventListener('astro:page-load', trackPageView);
+        document.addEventListener('DOMContentLoaded', trackPageView);
+      }
+    })();</script><title>Space Chase</title> <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.182.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.182.0/examples/jsm/"
+        }
+      }
+    </script> <style>body{margin:0;padding:0;font-family:Arial,sans-serif;background-color:#000}#spaceship-container[data-astro-cid-gh4py53g]{width:100vw;height:100vh;position:relative}#title-wrapper[data-astro-cid-gh4py53g]{position:absolute;top:25px;left:25px;width:250px;height:auto;z-index:1000;font-size:13px}#instructions[data-astro-cid-gh4py53g]{position:absolute;bottom:0;right:0;width:auto;height:auto;z-index:1000;padding:10px}#title-wrapper[data-astro-cid-gh4py53g] p[data-astro-cid-gh4py53g],#instructions[data-astro-cid-gh4py53g] p[data-astro-cid-gh4py53g]{margin:0 0 3px;color:#0ff;font-size:11px;line-height:1.1em}#title-wrapper[data-astro-cid-gh4py53g] a[data-astro-cid-gh4py53g],#instructions[data-astro-cid-gh4py53g] a[data-astro-cid-gh4py53g]{text-decoration:underline;color:#0ff}#title-wrapper[data-astro-cid-gh4py53g] h1[data-astro-cid-gh4py53g]{font-size:18px;font-weight:700;margin-top:0;margin-bottom:5px;color:#fff;line-height:1em}
+</style><script type="module" src="_astro/page.BrtTna5W.js"></script></head> <body>   <div id="spaceship-container" data-astro-cid-gh4py53g> <div id="title-wrapper" data-astro-cid-gh4py53g> <h1 data-astro-cid-gh4py53g>Space Chase</h1> <div id="credits" data-astro-cid-gh4py53g> <p data-astro-cid-gh4py53g>An interactive 3D space experiment powered by Three.js and GSAP.</p> <p data-astro-cid-gh4py53g>Design and code by <a href="index.html" data-astro-cid-gh4py53g>Hossein J Zobeidi</a></p> <p data-astro-cid-gh4py53g>
+Models: <a href="https://poly.pizza/m/Fyn9rs3x8X" data-astro-cid-gh4py53g>Spaceship</a> by <a href="https://poly.pizza/u/Quaternius" data-astro-cid-gh4py53g>Quaternius</a> and Tie Fighter by <a href="https://poly.pizza/u/mastjie" data-astro-cid-gh4py53g>Mastjie</a> on <a href="https://poly.pizza/" data-astro-cid-gh4py53g>poly.pizza</a>.
+</p> </div> </div> <div id="instructions" data-astro-cid-gh4py53g> <p data-astro-cid-gh4py53g>
+Left and Right Arrows to bank. Space to fire lasers. Drag to pan. Scroll to zoom in and out.
+</p> </div> <canvas id="spaceship-canvas" aria-hidden="true" data-astro-cid-gh4py53g></canvas> </div>  <script type="module" src="space-chase/space-chase.js"></script>  <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" data-cf-beacon='{"version":"2024.11.0","token":"5c628ad6c38f4e2a9745c8c3c530916c","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'></script>
+</body></html>

@@ -1,0 +1,1 @@
+import{S as l}from"./ScrollTrigger.DQG0xCVk.js";let e=null,r=null;function t(){e!==null&&cancelAnimationFrame(e),r!==null&&cancelAnimationFrame(r),e=requestAnimationFrame(()=>{e=null,r=requestAnimationFrame(()=>{r=null,l.ScrollTrigger.refresh(),document.dispatchEvent(new CustomEvent("scrolltrigger:refreshed"))})})}export{t as s};

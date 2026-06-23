@@ -1,0 +1,1 @@
+function n(){if(typeof window>"u")return!1;const e=window.location.pathname.replace(/\/$/,"")||"";return e===""||e==="/index.html"}function a(e){return typeof window>"u"?!1:new URL(window.location.href).searchParams.has(e)}export{a as h,n as i};
